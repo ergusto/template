@@ -1,0 +1,13 @@
+{
+	"name": "project name",
+	"description": "A Django and React starter project for hosting on Heroku",
+	"repository": "https://github.com/ergusto/template",
+	"keywords": ["Django", "React", "Django Template", "Django and React"],
+	"addons": ["heroku-postgresql"],
+	"env": {
+		"SECRET_KEY": {
+			"description": "The secret key for the Django application",
+			"generator": "secret"
+		}
+	}
+}
