@@ -11,13 +11,13 @@ config.module.rules = config.module.rules.concat([{
 	use: [{
 		loader: 'babel-loader',
 		options: {
-			presets: ['es2015', 'stage-0', 'react']
+			presets: ['stage-0', 'react']
 		}
 	}]
 }]);
 
 config.plugins = config.plugins.concat([
-	new BundleTracker({ filename: './client/webpack/stats.production.json' }),
+	new BundleTracker({ filename: './client/webpack/stats/production.json' }),
 
 	new webpack.DefinePlugin({
 		'process.env': {

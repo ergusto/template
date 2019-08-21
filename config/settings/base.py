@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     # Add your applications here
     'api',
+    'core',
+    'users',
 ]
 
 MIDDLEWARE = [

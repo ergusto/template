@@ -1,22 +1,33 @@
-var path = require('path');
+const paths = require('./paths.js');
 
 module.exports = {
-	context: path.resolve(__dirname, '..'),
-	entry: '../app',
+	context: paths.root,
+	entry: paths.entryPath,
 	output: {
-		path: path.resolve('./static/build/'),
+		path: paths.outputPath,
 		filename: '[name]-[hash].js'
 	},
 	resolve: {
+		modules: ['src','node_modules'],
+		extensions: ['*','.js','.jsx','.css','.scss'],
 		alias: {
-			app: path.resolve(__dirname, '../app')
+			app: paths.appPath
 		}
 	},
 	plugins: [],
 	module: {
 		rules: [{
-			test: /\.scss$/,
-			use: ['style-loader', 'css-loader', 'sass-loader']
+			test: /\.(js|jsx)$/,
+			loader: 'babel-loader',
+			exclude:  /(node_modules)/
+		},
+		{
+			test: /\.(woff2|ttf|woff|eot)$/,
+			use: [
+				{
+					loader: 'file-loader'
+				}
+			]
 		}]
 	}
 };

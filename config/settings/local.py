@@ -19,6 +19,6 @@ DATABASES = {
 WEBPACK_LOADER = {
     "DEFAULT": {
         "BUNDLE_DIR_NAME": "build/",
-        "STATS_FILE": os.path.join(PROJECT_DIR, "client/webpack/stats.local.json"),
+        "STATS_FILE": os.path.join(PROJECT_DIR, "client/webpack/stats/local.json"),
     }
 }
