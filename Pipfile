@@ -1,18 +1,16 @@
 [[source]]
-
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-
 [packages]
-
 django = "*"
 djangorestframework = "*"
 gunicorn = "*"
 django-heroku = "*"
 django-webpack-loader = "*"
-
+djangorestframework-jwt = "*"
+whitenoise = "*"
 
 [dev-packages]
 
