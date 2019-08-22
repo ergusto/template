@@ -4,7 +4,6 @@ module.exports = {
 	context: paths.root,
 	entry: paths.entryPath,
 	output: {
-		path: paths.outputPath,
 		filename: '[name]-[hash].js'
 	},
 	resolve: {
