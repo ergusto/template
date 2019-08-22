@@ -10,9 +10,9 @@ gunicorn = "*"
 django-heroku = "*"
 django-webpack-loader = "*"
 djangorestframework-jwt = "*"
+psycopg2 = "*"
 whitenoise = "*"
-
-[dev-packages]
+django-filter = "*"
 
 [requires]
 python_version = "3.7"
