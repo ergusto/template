@@ -1,3 +1,3 @@
 # Template
 
-A Django & React starter project
+A Django, Webpack & React starter project
